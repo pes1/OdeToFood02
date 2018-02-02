@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "1067662",
+    "ThreadId": "449845",
+    "Html": "First, this is a great tutorial! Very easy to follow and understand, even for a novice.<br />\n<br />\nThe issue I have is with the Autocomplete ActionResult used in the Home Controller. I followed the tutorial, but when I enter a string into the search area, I get a bullet list of the results being returned and this is not wrapped in a label as called for in the Home Controller. The only difference I have is with jquery version. 1.7.x is shown in the tutorial, and I have 1.8.x on my machine. to date, I have not attempted to change/downgrade versions. <br />\n<br />\nCould this be the reason that I cannot get the Autocomplete to function correctly?<br />\n<br />\nThanks for all of the hard work, and I look forward to future tutorials!<br />\n",
+    "PostedDate": "2013-07-12T12:39:54.977-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1087077",
+    "ThreadId": "449845",
+    "Html": "Try adding <code>@Styles.Render(&quot;~/Content/themes/base/css&quot;)</code> to your _Layout.cshtml page. The head section of the page should look like this:<br />\n<pre><code>&lt;head&gt;\n    &lt;meta charset=&quot;utf-8&quot; /&gt;\n    &lt;title&gt;@ViewBag.Title - Ode to Food&lt;/title&gt;\n    &lt;link href=&quot;~/favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&gt;\n    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;\n    @Styles.Render(&quot;~/Content/css&quot;)\n    @Styles.Render(&quot;~/Content/themes/base/css&quot;)\n    @Scripts.Render(&quot;~/bundles/modernizr&quot;)\n&lt;/head&gt;</code></pre>\n\n",
+    "PostedDate": "2013-09-01T05:31:57.153-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1106482",
+    "ThreadId": "449845",
+    "Html": "The issue still persists with the above solution. Does anyone else know why the auto complete displays with bullet points?<br />\n",
+    "PostedDate": "2013-10-11T09:40:15.993-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1106522",
+    "ThreadId": "449845",
+    "Html": "After fiddling with several jquery.ui css files, I managed to give autocomplete it's appropriate styling by adding the &quot;~/Content/themes/base/jquery.ui.all.css&quot; file to my Style bundle.<br />\n<pre><code>bundles.Add(new StyleBundle(&quot;~/Content/themes/base/css&quot;).Include(\n                        &quot;~/Content/themes/base/jquery.ui.all.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.core.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.resizable.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.selectable.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.accordion.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.autocomplete.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.button.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.dialog.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.slider.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.tabs.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.datepicker.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.progressbar.css&quot;,\n                        &quot;~/Content/themes/base/jquery.ui.theme.css&quot;));</code></pre>\n\n",
+    "PostedDate": "2013-10-11T10:44:57.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "1040511",
+    "ThreadId": "442844",
+    "Html": "Hello<br />\n<br />\nI have already downloaded the code fro MVC4, the latest version(**), and the first time I run it, it did it alright. <br />\nI got a problem with Nuget and to solve it I decided to delete the folder with OdeToFood. <br />\nThen I unzipped it again as I did before but now, it doesn´t run.<br />\nA yellow page with a message about the it cannot find the database under App_Data.<br />\nWeird cos the first time it was create and was working.<br />\n(**)By the way, I downloaded a version of FEB 08, 2013.<br />\n <br />\nHere's the message:<br />\n<h2>Server Error in '/' Application.</h2>\nCannot attach the file 'D:\\PROJECTS\\VISUAL STUDIO work\\K.ScottAllen\\OdeToFood\\odetofoodmvc4-(Feb 08, 2013)\\OdeToFood\\App_Data\\OdeToFoodDb.mdf' as database 'OdeToFoodDb'. <br />\n  Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br />\n<br />\n Exception Details: System.Data.SqlClient.SqlException: Cannot attach the file 'D:\\PROJECTS\\VISUAL STUDIO work\\K.ScottAllen\\OdeToFood\\odetofoodmvc4-(Feb 08, 2013)\\OdeToFood\\App_Data\\OdeToFoodDb.mdf' as database 'OdeToFoodDb'.<br />\n<br />\nSource Error: <br />\n<br />\n<br />\n<br />\nLine 22: <br />\nLine 23:             var migrator = new DbMigrator(new Configuration());<br />\nLine 24:             migrator.Update();<br />\nLine 25: <br />\nLine 26:             if (!WebSecurity.Initialized)<br />\n<br />\n<br />\n Source File:  d:\\PROJECTS\\VISUAL STUDIO work\\K.ScottAllen\\OdeToFood\\odetofoodmvc4-(Feb 08, 2013)\\OdeToFood\\Global.asax.cs    Line:  24 <br />\n<br />\nStack Trace: <br />\n<br />\n<br />\n<br />\n[SqlException (0x80131904): Cannot attach the file 'D:\\PROJECTS\\VISUAL STUDIO work\\K.ScottAllen\\OdeToFood\\odetofoodmvc4-(Feb 08, 2013)\\OdeToFood\\App_Data\\OdeToFoodDb.mdf' as database 'OdeToFoodDb'.]<br />\n   System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection) +414<br />\n   System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource<code>1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection) +78<br />   System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource</code>1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection) +167<br />\n   System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource<code>1 retry, DbConnectionOptions userOptions) +143<br />   System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource</code>1 retry) +83<br />\n   System.Data.SqlClient.SqlConnection.Open() +96<br />\n   System.Data.Entity.Migrations.DbMigrator.ExecuteStatements(IEnumerable<code>1 migrationStatements) +91<br />   System.Data.Entity.Migrations.Infrastructure.MigratorBase.ExecuteStatements(IEnumerable</code>1 migrationStatements) +42<br />\n   System.Data.Entity.Migrations.DbMigrator.ExecuteOperations(String migrationId, XDocument targetModel, IEnumerable<code>1 operations, Boolean downgrading, Boolean auto) +1025<br />   System.Data.Entity.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration) +494<br />   System.Data.Entity.Migrations.Infrastructure.MigratorBase.ApplyMigration(DbMigration migration, DbMigration lastMigration) +56<br />   System.Data.Entity.Migrations.DbMigrator.Upgrade(IEnumerable</code>1 pendingMigrations, String targetMigrationId, String lastMigrationId) +186<br />\n   System.Data.Entity.Migrations.Infrastructure.MigratorBase.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId) +59<br />\n   System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration) +896<br />\n   System.Data.Entity.Migrations.Infrastructure.MigratorBase.Update() +33<br />\n   OdeToFood.MvcApplication.Application_Start() in d:\\PROJECTS\\VISUAL STUDIO work\\K.ScottAllen\\OdeToFood\\odetofoodmvc4-(Feb 08, 2013)\\OdeToFood\\Global.asax.cs:24<br />\n<br />\n[HttpException (0x80004005): Cannot attach the file 'D:\\PROJECTS\\VISUAL STUDIO work\\K.ScottAllen\\OdeToFood\\odetofoodmvc4-(Feb 08, 2013)\\OdeToFood\\App_Data\\OdeToFoodDb.mdf' as database 'OdeToFoodDb'.]<br />\n   System.Web.HttpApplicationFactory.EnsureAppStartCalledForIntegratedMode(HttpContext context, HttpApplication app) +9859441<br />\n   System.Web.HttpApplication.RegisterEventSubscriptionsWithIIS(IntPtr appContext, HttpContext context, MethodInfo[] handlers) +118<br />\n   System.Web.HttpApplication.InitSpecial(HttpApplicationState state, MethodInfo[] handlers, IntPtr appContext, HttpContext context) +172<br />\n   System.Web.HttpApplicationFactory.GetSpecialApplicationInstance(IntPtr appContext, HttpContext context) +336<br />\n   System.Web.Hosting.PipelineRuntime.InitializeApplication(IntPtr appContext) +296<br />\n<br />\n[HttpException (0x80004005): Cannot attach the file 'D:\\PROJECTS\\VISUAL STUDIO work\\K.ScottAllen\\OdeToFood\\odetofoodmvc4-(Feb 08, 2013)\\OdeToFood\\App_Data\\OdeToFoodDb.mdf' as database 'OdeToFoodDb'.]<br />\n   System.Web.HttpRuntime.FirstRequestInit(HttpContext context) +9873784<br />\n   System.Web.HttpRuntime.EnsureFirstRequestInit(HttpContext context) +101<br />\n<h2>   System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context) +254</h2>\nVersion Information: Microsoft .NET Framework Version:4.0.30319; ASP.NET Version:4.0.30319.18034  <br />\n",
+    "PostedDate": "2013-05-07T10:52:16.987-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1040625",
+    "ThreadId": "442844",
+    "Html": "I already have found what was happening. Everything is fixed-up now. I m gonna tell you later what it was.<br />\n",
+    "PostedDate": "2013-05-07T16:50:52.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1051030",
+    "ThreadId": "442844",
+    "Html": "<strong>hjoab wrote:</strong><br />\n<blockquote>\nI already have found what was happening. Everything is fixed-up now. I m gonna tell you later what it was.<br />\n</blockquote>\nYou have you forgotten to provide the details that could help others?<br />\n",
+    "PostedDate": "2013-05-31T00:01:16.637-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1051297",
+    "ThreadId": "442844",
+    "Html": "Ok yes sorry. As I remember I was having the same problems, and it looks like the reason was that I have already installed SQL Express. I looks that the first time when you compile the solution, VS doesn´t recognize the presence of the SQL Server express, but after calling database migrations the first time it becomes aware of it and does not generate the DB again under App_Data. (WHY?? I don't know but I could  guess that the logic behind is that if you already have the SQL Server express installed in your machine, why to use LocalBD instead). So what I did was to change the string connection inside the web config for connecting to the SQL Server Express into previously create OdeToFoodDB and everything was working fine. <br />\n",
+    "PostedDate": "2013-05-31T10:38:09.883-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1051477",
+    "ThreadId": "442844",
+    "Html": "Thanks LOADS..S..S..S..S.S.S.S.S... hjoab. this solved it for me as well. Sometimes I wish there would have been an easy way to back out 'Database migrations' and just regen from that point forward. Maybe there is and I just haven't read the right post . . . but this sure got me out of a jam!!!\r<br />\n<br />\nThanks again . . .\r<br />\ntjdarth1<br />\n",
+    "PostedDate": "2013-06-01T01:38:55.153-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1051544",
+    "ThreadId": "442844",
+    "Html": "yjdarth1 you're  welcome, and yes I agree with you, but in the hundred thousands maybe millions of lines in tools like VS and associated ones we can expect some pitfalls.<br />\n",
+    "PostedDate": "2013-06-01T08:34:37.827-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1101364",
+    "ThreadId": "442844",
+    "Html": "Using SQL 2008 Express and VS 2012 Express, I had to change the connection string in the webConfig file to read:<br />\n\r<br />\n[add name=&quot;DefaultConnection&quot; connectionString=&quot;Data Source=.;Initial Catalog=OdeToFoodDb;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\OdeToFoodDb.mdf&quot;   ... <br />\n\r<br />\nto get the database portion to launch.<br />\n",
+    "PostedDate": "2013-10-01T08:46:52.903-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

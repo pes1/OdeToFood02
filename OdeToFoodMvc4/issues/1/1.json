@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "HI , I see an error  while running this code first time ..\r\n\r\nUnable to update database to match the current model because there are pending changes and automatic migration is disabled. Either write the pending model changes to a code-based migration or enable automatic migration. Set DbMigrationsConfiguration.AutomaticMigrationsEnabled to true to enable automatic migration.\r\n\r\n->With this i have made a change to..... public Configuration()\r\n        {\r\n            AutomaticMigrationsEnabled = true; // from true to false;\r\n        }\r\n\r\n-> Even i see an other error :\r\nThe operation failed because an index or statistics with name 'IX_RestaurantId' already exists on table 'dbo.RestaurantReviews'.\r\n\r\nHere is webconfig file connection string details :\r\n\r\n<connectionStrings>\r\n    <add name=\"OdeToFoodDB2\" connectionString=\"Data Source=(LocalDb)\\v11.0;Initial Catalog=OdeToFoodDb;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\OdeToFoodDb.mdf\" providerName=\"System.Data.SqlClient\" />\r\n  </connectionStrings>\r\n\r\nPlease help me out from this issue to run the code .\r\nI am eagerly waiting for your response..",
+    "LastUpdatedDate": "2014-09-03T07:38:22.727-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "OdeToFoodMvc4",
+    "ReportedDate": "2014-09-03T07:08:46.7-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error while running the code for  the first time",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I'm not sure what the state of the database is on your machine, but it sounds like the migrations are out of sync. Can you delete the database and run \"update-database\" from the package manager console to recreate the database in a fresh state?",
+      "PostedDate": "2014-09-03T07:38:22.727-07:00",
+      "Id": 158700
+    }
+  ]
+}

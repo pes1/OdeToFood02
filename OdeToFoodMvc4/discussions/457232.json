@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1093746",
+    "ThreadId": "457232",
+    "Html": "Hi, \r<br />\n<br />\nI'm a total beginner in .net world and trying to learn asp.net mvc 4. \r<br />\nThis is my first tutorial, I think it's great and I want to follow it through from beginng to the end.\r<br />\nI've just watched and followed the first module and just can't find a way to download those files from <strong>source code &gt; history</strong> tab.\r<br />\n<br />\nPlease help.<br />\n",
+    "PostedDate": "2013-09-17T14:36:53.537-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1215120",
+    "ThreadId": "457232",
+    "Html": "I'm also having problems getting started with OdeToFood.<br />\n<br />\nI see that the (presumably) correct file to download is <a href=\"OdeToFoodMvc4\" rel=\"nofollow\">https://odetofoodmvc4.codeplex.com/SourceControl/changeset/078418e322b291cb0a02ab1d73b7a1d37f6d7abc</a> Oct 10, 2012<br />\n8:30 PM\tcomplete video 1 - introduction<br />\n<br />\nBut there are missing dependencies such as:<br />\n<br />\nError\t1\tThe type or namespace name 'Optimization' does not exist in the namespace 'System.Web' (are you missing an assembly reference?)\tC:\\Users\\Christopher\\Documents\\Visual Studio 2012\\Projects\\OdeToFood\\OdeToFood\\App_Start\\BundleConfig.cs\t2\t18\tOdeToFood<br />\nError\t2\tThe type or namespace name 'Infrastructure' does not exist in the namespace 'System.Data.Entity' (are you missing an assembly reference?)\tC:\\Users\\Christopher\\Documents\\Visual Studio 2012\\Projects\\OdeToFood\\OdeToFood\\Filters\\InitializeSimpleMembershipAttribute.cs\t3\t26\tOdeToFood<br />\nError\t3\tThe type or namespace name 'Optimization' does not exist in the namespace 'System.Web' (are you missing an assembly reference?)\tC:\\Users\\Christopher\\Documents\\Visual Studio 2012\\Projects\\OdeToFood\\OdeToFood\\Global.asax.cs\t7\t18\tOdeToFood<br />\nError\t4\tThe type or namespace name 'DotNetOpenAuth' could not be found (are you missing a using directive or an assembly reference?)\tC:\\Users\\Christopher\\Documents\\Visual Studio 2012\\Projects\\OdeToFood\\OdeToFood\\Controllers\\AccountController.cs\t8\t7\tOdeToFood<br />\nError\t5\tThe type or namespace name 'BundleCollection' could not be found (are you missing a using directive or an assembly reference?)\tC:\\Users\\Christopher\\Documents\\Visual Studio 2012\\Projects\\OdeToFood\\OdeToFood\\App_Start\\BundleConfig.cs\t9\t44\tOdeToFood<br />\nError\t6\tThe type or namespace name 'DbContext' could not be found (are you missing a using directive or an assembly reference?)\tC:\\Users\\Christopher\\Documents\\Visual Studio 2012\\Projects\\OdeToFood\\OdeToFood\\Models\\AccountModels.cs\t11\t33\tOdeToFood<br />\nError\t7\tThe type or namespace name 'DbSet' could not be found (are you missing a using directive or an assembly reference?)\tC:\\Users\\Christopher\\Documents\\Visual Studio 2012\\Projects\\OdeToFood\\OdeToFood\\Models\\AccountModels.cs\t18\t16\tOdeToFood<br />\n<br />\nI don't see how anyone could get started on this without hunting down and adding the required references. I'm using Visual Studio Express 2012 for Web.<br />\n",
+    "PostedDate": "2014-02-26T05:30:16.947-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1215356",
+    "ThreadId": "457232",
+    "Html": "I just downloaded the source, and ran the project. I had similar errors you had. I got them fixed by going to Tools &gt;Library Package Manager &gt; Package Manager Settings.\r<br />\n<br />\nThen check Allow NuGet to download missing packages during build.\r<br />\n<br />\nThen rebuild the solution, and it should work.\r<br />\n<br />\nGood Luck<br />\n",
+    "PostedDate": "2014-02-26T15:02:23.32-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

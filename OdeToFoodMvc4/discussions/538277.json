@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1220220",
+    "ThreadId": "538277",
+    "Html": "I am trying to create MVC 4 application(OdeToFood tutorial) in VS Express. I have created this class in models.\r<br />\n<br />\nBut when I run the code, Database &quot;OdeToFoodDB2&quot; isn't being created<br />\n<pre><code>namespace OdeToFood.Models\n{\n    public class OdeToFoodDB2 : DbContext\n    {\n        public DbSet&lt;Resturant&gt; Resturant { get; set; }\n        public DbSet&lt;ResturantReview&gt; ResturantReview { get; set; }\n    }\n}</code></pre>\n\nIn web.config file I have following connection string<br />\n<pre><code>&lt;add name=&quot;DefaultConnection&quot; connectionString=&quot;Data Source=(LocalDb)\\v11.0;Initial Catalog=aspnet-OdeToFood-20140306003945;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\aspnet-OdeToFood-20140306003945.mdf&quot; providerName=&quot;System.Data.SqlClient&quot; /&gt;</code></pre>\n\nbut this db doesn't contain the tables that I've specified in Model folder.\r<br />\n<br />\nMuch appreciations for helping me<br />\n",
+    "PostedDate": "2014-03-07T03:27:22.003-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Has anyone tried the \"Back to List\" link on the \"edit\" page of the Restaurants Reviews? Does it work for you? I get an error \"The parameters dictionary contains a null entry for parameter...\" when clicking on this link. I think the Id is missing.",
+    "LastUpdatedDate": "2015-03-09T14:36:10.197-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "OdeToFoodMvc4",
+    "ReportedDate": "2015-03-09T14:36:10.197-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Edit Review Link ( Return to List )",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 2
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

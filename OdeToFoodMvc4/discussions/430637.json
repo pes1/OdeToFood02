@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "991167",
+    "ThreadId": "430637",
+    "Html": "\r\n<p>The action link for Back to list in Create.cshtml should be something like this:</p>\r\n<p>&nbsp;@Html.ActionLink(&quot;Back to List&quot;, &quot;Index&quot;, new { id=Request.Params[&quot;restaurantId&quot;] }, null)</p>\r\n",
+    "PostedDate": "2013-01-23T12:54:40.897-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

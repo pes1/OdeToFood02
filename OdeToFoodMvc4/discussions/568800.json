@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1309622",
+    "ThreadId": "568800",
+    "Html": "BUG: It's missing a trailing &quot;}&quot; so the if-else statement is incomplete, resulting in a runtime exception when rendering the _Layout.cshtml view.<br />\n",
+    "PostedDate": "2014-10-01T09:38:38.847-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

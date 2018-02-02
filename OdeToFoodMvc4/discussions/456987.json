@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1092939",
+    "ThreadId": "456987",
+    "Html": "thanks for the tutorial.. One heads-up though is that when enabling caching on the HomeController also the login in link still shows up even after the user has logged in..\r<br />\n<br />\nWhat additional exception is required to cover this? VaryByHeader = &quot;X-Requested-With;Accept-Language, xyz?&quot;<br />\n",
+    "PostedDate": "2013-09-15T15:30:19.33-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1116380",
+    "ThreadId": "456987",
+    "Html": "You can use VaryByCustom similar to what is shown here: <a href=\"http://stackoverflow.com/questions/2289941/outputcache-controller-attribute-vary-by-user-role-is-this-possible-in-net-mvc\" rel=\"nofollow\">http://stackoverflow.com/questions/2289941/outputcache-controller-attribute-vary-by-user-role-is-this-possible-in-net-mvc</a>.\r<br />\n<br />\nI'd recommend not caching the entire page, perhaps. Separate the list of reviews into a partial view and only cache the partial. <br />\n",
+    "PostedDate": "2013-10-31T17:52:22.547-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
